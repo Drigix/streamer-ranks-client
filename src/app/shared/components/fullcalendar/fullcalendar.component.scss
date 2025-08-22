@@ -1,0 +1,43 @@
+.fc .fc-daygrid-day-number {
+  display: inline;
+  color: inherit;
+  opacity: 1;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+//:host ::ng-deep .fc .fc-daygrid-day-number {
+//  color: #162640;
+//}
+
+:host ::ng-deep .fc .fc-daygrid-day-frame {
+  background: var(--p-fullcalendar-background);
+}
+
+
+:host ::ng-deep .fc-h-event {
+  background: transparent !important;
+}
+:host ::ng-deep .fc-h-event .fc-event-title-container {
+  background: var(--p-fullcalendar-event-background);
+  height: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.15s ease;
+}
+
+:host ::ng-deep .fc-h-event .fc-event-title-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  cursor: pointer;
+  scale: 1.01;
+}
+
+:host ::ng-deep .fc-direction-ltr .fc-daygrid-event.fc-event-start, .fc-direction-rtl .fc-daygrid-event.fc-event-end {
+  border-top-left-radius: 15px !important;
+  border-bottom-left-radius: 15px !important;
+}
+
+:host ::ng-deep .fc-direction-ltr .fc-daygrid-event.fc-event-end, .fc-direction-rtl .fc-daygrid-event.fc-event-start {
+  border-top-right-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+}

@@ -1,0 +1,7 @@
+<div class="main-list">
+  @for (advertisement of advertisements; track advertisement) {
+    <div class="image-container items-center gap-2 px-3 py-2 rounded-full cursor-pointer" (click)="openLink(advertisement?.url)">
+      <img [src]="advertisement.img" />
+    </div>
+  }
+</div>

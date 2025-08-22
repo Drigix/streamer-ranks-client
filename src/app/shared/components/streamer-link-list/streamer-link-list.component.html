@@ -1,0 +1,20 @@
+<div class="main-list justify-content-start">
+  @for (streamerLink of streamerLinks; track streamerLink) {
+    <p-chip
+      class="flex items-center gap-2 px-3 py-2 rounded-full cursor-pointer"
+      [ngStyle]="{
+        'background-color': streamerLink.mainColor,
+        'color': getContrastColor(streamerLink?.mainColor)
+      }"
+      (click)="openLink(streamerLink?.url)">
+
+  <span class="flex items-center justify-center w-7 h-7 rounded-full bg-white/20">
+    <i [ngClass]="getLinkIcon(streamerLink.linkType)" class="link-type-label"></i>
+  </span>
+
+      <span class="font-medium link-label">{{ streamerLink.linkLabel }}</span>
+
+      <i class="pi pi-external-link opacity-80 external-link-label"></i>
+    </p-chip>
+  }
+</div>
