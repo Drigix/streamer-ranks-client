@@ -1,3 +1,7 @@
-::ng-deep .p-tablist-tab-list {
-  justify-content: center;
+::ng-deep .p-tablist-tab-list  {
+  background: var(--p-component-background) !important;
+}
+
+::ng-deep .p-tabpanels {
+  background: var(--p-component-background) !important;
 }

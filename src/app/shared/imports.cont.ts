@@ -27,6 +27,7 @@ import {Skeleton} from 'primeng/skeleton';
 import {CommonModule} from '@angular/common';
 import {RouterModule} from '@angular/router';
 import {ReactiveFormsModule} from '@angular/forms';
+import {Chip} from 'primeng/chip';
 
 export const COMMON_IMPORTS =
   [CommonModule, RouterModule];
@@ -50,4 +51,4 @@ export const PRIMENG_MESSAGE_COMPONENTS =
   [Message, Toast];
 
 export const PRIMENG_MISC_COMPONENTS =
-  [Avatar, Tag, Skeleton];
+  [Avatar, Tag, Skeleton, Chip];

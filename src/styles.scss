@@ -1,8 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
-//@import "primeflex/themes/primeone-dark.css";
+@import "primeflex/themes/primeone-dark.css";
 //@import "primeflex/themes/primeone-light.css";
+@import 'primeflex/primeflex.scss';
+@import "assets/scss/global.scss";
+@import "primeicons/primeicons.css";
 
 :root {
-  --p-primary-color: #d33474 !important;
-  --p-focus-ring-color: #d33474 !important;
+  height: 100%;
+  width: 100%;
+  --p-content-background: #081325 !important;
+  --p-component-background: #162640 !important;
+  --p-fullcalendar-background: rgba(22, 38, 64, 0.76) !important;
+  --p-fullcalendar-event-background: #315ca5 !important;
+  //--p-primary-color: #d33474 !important;
+  //--p-focus-ring-color: #d33474 !important;
 }
